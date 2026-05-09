@@ -40,7 +40,7 @@ experiments/
 
 ---
 
-### `run_2/` — Baseline Ablation Sweep (T24–T26)
+### `run_2/` — Baseline Ablation Sweep (T2–T21)
 
 | Trial | Directory | Key Change | Val Acc | Kaggle |
 |---|---|---|---|---|
