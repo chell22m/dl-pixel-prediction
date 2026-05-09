@@ -1,0 +1,8 @@
+{
+  "submission_file": "submission_20260430_204831.csv",
+  "inference_time_sec": 569.8,
+  "total_training_time_sec": 188.6,
+  "val_wrong_answers": 58,
+  "val_accuracy": 0.44761904761904764,
+  "n_test_examples": 1008
+}

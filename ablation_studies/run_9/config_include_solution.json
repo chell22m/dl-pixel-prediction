@@ -1,0 +1,28 @@
+{
+  "MODEL_ID": "HuggingFaceTB/SmolVLM-500M-Instruct",
+  "IMG_SIZE": 512,
+  "MAX_SEQ_LEN": 2048,
+  "TRAIN_SUBSET_FRAC": 1.0,
+  "TRAIN_BATCH": 4,
+  "GRAD_ACCUM": 4,
+  "EVAL_BATCH": 16,
+  "LR": 0.0002,
+  "EPOCHS": 20,
+  "WARMUP_RATIO": 0.05,
+  "LORA_RANK": 8,
+  "LORA_ALPHA": 16,
+  "LORA_DROPOUT": 0.05,
+  "LORA_TARGET_MODULES": [
+    "q_proj",
+    "v_proj",
+    "k_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ],
+  "use_bnb": true,
+  "amp_autocast_dtype": "bfloat16",
+  "bnb_compute_dtype": "bfloat16",
+  "model_load_dtype": "bfloat16"
+}

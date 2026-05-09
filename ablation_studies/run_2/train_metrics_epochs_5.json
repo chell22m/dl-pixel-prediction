@@ -1,0 +1,77 @@
+{
+  "config": {
+    "MODEL_ID": "HuggingFaceTB/SmolVLM-500M-Instruct",
+    "IMG_SIZE": 256,
+    "MAX_SEQ_LEN": 1024,
+    "TRAIN_SUBSET_FRAC": 0.1,
+    "TRAIN_BATCH": 4,
+    "GRAD_ACCUM": 4,
+    "EVAL_BATCH": 16,
+    "LR": 0.0002,
+    "EPOCHS": 5,
+    "WARMUP_RATIO": 0.05,
+    "LORA_RANK": 8,
+    "LORA_ALPHA": 16,
+    "LORA_DROPOUT": 0.05,
+    "LORA_TARGET_MODULES": [
+      "q_proj",
+      "v_proj",
+      "k_proj",
+      "o_proj"
+    ],
+    "use_bnb": true,
+    "amp_autocast_dtype": "bfloat16",
+    "bnb_compute_dtype": "bfloat16",
+    "model_load_dtype": "bfloat16"
+  },
+  "best_val_acc": 0.5523809523809524,
+  "total_training_time_sec": 1327.6,
+  "val_wrong_answers": 47,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 1.230145,
+      "val_loss": 1.034045,
+      "val_accuracy": 0.504762,
+      "global_step": 20,
+      "lr": 0.0001879473751206489,
+      "epoch_time_sec": 274.8
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.782919,
+      "val_loss": 1.138368,
+      "val_accuracy": 0.495238,
+      "global_step": 40,
+      "lr": 0.00014016954246529696,
+      "epoch_time_sec": 537.9
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.610486,
+      "val_loss": 1.203303,
+      "val_accuracy": 0.504762,
+      "global_step": 60,
+      "lr": 7.54514512859201e-05,
+      "epoch_time_sec": 802.7
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.479905,
+      "val_loss": 1.199496,
+      "val_accuracy": 0.552381,
+      "global_step": 80,
+      "lr": 2.1085949060360654e-05,
+      "epoch_time_sec": 1061.7
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.395993,
+      "val_loss": 1.222069,
+      "val_accuracy": 0.552381,
+      "global_step": 100,
+      "lr": 0.0,
+      "epoch_time_sec": 1327.6
+    }
+  ]
+}

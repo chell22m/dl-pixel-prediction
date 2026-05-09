@@ -1,0 +1,81 @@
+{
+  "n_samples": 1048,
+  "coverage": {
+    "has_lecture": 915,
+    "has_hint": 816
+  },
+  "conditions": [
+    {
+      "label": "Full (lecture + hint)",
+      "use_lecture": true,
+      "use_hint": true,
+      "accuracy": 0.787214,
+      "correct": 825,
+      "n": 1048,
+      "time_sec": 103.42,
+      "per_subject": {
+        "language science": 0.607143,
+        "natural science": 0.765766,
+        "social science": 0.876543
+      },
+      "acc_on_has_lecture": 0.772678,
+      "acc_on_has_hint": 0.779412,
+      "delta": 0.0,
+      "agreement_with_full": 1.0
+    },
+    {
+      "label": "Lecture only",
+      "use_lecture": true,
+      "use_hint": false,
+      "accuracy": 0.68416,
+      "correct": 717,
+      "n": 1048,
+      "time_sec": 98.91,
+      "per_subject": {
+        "language science": 0.571429,
+        "natural science": 0.638353,
+        "social science": 0.843621
+      },
+      "acc_on_has_lecture": 0.664481,
+      "acc_on_has_hint": 0.647059,
+      "delta": -0.103054,
+      "agreement_with_full": 0.842557
+    },
+    {
+      "label": "Hint only",
+      "use_lecture": false,
+      "use_hint": true,
+      "accuracy": 0.675573,
+      "correct": 708,
+      "n": 1048,
+      "time_sec": 96.77,
+      "per_subject": {
+        "language science": 0.428571,
+        "natural science": 0.642214,
+        "social science": 0.8107
+      },
+      "acc_on_has_lecture": 0.644809,
+      "acc_on_has_hint": 0.666667,
+      "delta": -0.111641,
+      "agreement_with_full": 0.776718
+    },
+    {
+      "label": "No context",
+      "use_lecture": false,
+      "use_hint": false,
+      "accuracy": 0.609733,
+      "correct": 639,
+      "n": 1048,
+      "time_sec": 96.27,
+      "per_subject": {
+        "language science": 0.428571,
+        "natural science": 0.563707,
+        "social science": 0.777778
+      },
+      "acc_on_has_lecture": 0.579235,
+      "acc_on_has_hint": 0.582108,
+      "delta": -0.177481,
+      "agreement_with_full": 0.667939
+    }
+  ]
+}

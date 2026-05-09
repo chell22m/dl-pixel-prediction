@@ -1,0 +1,16 @@
+{
+  "method": "direct_generation",
+  "submission_file": "/content/drive/MyDrive/Colab Notebooks/run_3//submission_gen_20260505_232739.csv",
+  "inference_time_sec": 1514.9,
+  "time_per_sample_sec": 1.5029,
+  "max_new_tokens": 10,
+  "n_test_examples": 1008,
+  "n_invalid_outputs": 0,
+  "pct_invalid": 0.0,
+  "answer_distribution": {
+    "0": 407,
+    "1": 305,
+    "2": 207,
+    "3": 89
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "final_epochs": 7,
+  "final_lr": 0.0001,
+  "combined_train_size": 4157,
+  "final_training_time_sec": 3418.4,
+  "epoch_losses": [
+    0.237302,
+    0.128109,
+    0.093537,
+    0.056788,
+    0.038923,
+    0.024759,
+    0.018053
+  ],
+  "started_from": "best_checkpoint",
+  "original_best_val_acc": 0.833015
+}

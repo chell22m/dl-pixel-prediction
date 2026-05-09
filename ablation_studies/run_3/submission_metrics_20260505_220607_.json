@@ -1,0 +1,8 @@
+{
+  "submission_file": "/content/drive/MyDrive/Colab Notebooks/run_3//submission_20260505_220607.csv",
+  "inference_time_sec": 732.1,
+  "total_training_time_sec": 1537.0,
+  "val_wrong_answers": 41,
+  "val_accuracy": 0.6095238095238096,
+  "n_test_examples": 1008
+}
