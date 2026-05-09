@@ -10,7 +10,7 @@ This README maps every ablation study run directory to the corresponding trial n
 experiments/
 ├── run_0/    # Baseline: starter         → T0
 ├── run_1/    # Baseline: epochs=5.       → T1
-├── run_2/    # Baseline: Ablation sweep  → T2–T22
+├── run_2/    # Baseline: Ablation sweep  → T2–T21
 ├── run_3/    # Improved baseline         → T24, T25, T26
 ├── run_4/    # Frozen encoder, prompt.   → T22 (frozen), T23, context ablation
 ├── run_5/    # Long training             → T27
