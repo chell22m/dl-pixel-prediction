@@ -1,6 +1,6 @@
 # Pixels to Predictions — Ablation Studies Directory
 
-This README maps every ablation study run directory to the corresponding trial numbers in **Table 3** (`tab:experiments`) of the report.
+This README maps every ablation study run directory to the corresponding trial numbers in **Table 5** (`tab:experiments`) of the report.
 
 ---
 
@@ -8,14 +8,15 @@ This README maps every ablation study run directory to the corresponding trial n
 
 ```
 experiments/
-├── run_0/    # Ablation sweep         → T0–T22
-├── run_2/    # img_size supplementary → T19–T22 (additional metrics)
-├── run_3/    # Improved baseline      → T24, T25, T26
-├── run_4/    # Frozen encoder, prompt → T22 (frozen), T23, context ablation
-├── run_5/    # Long training          → T27
-├── run_7/    # img_size=512           → T28
-├── run_8/    # Train+val retrain      → T29
-└── run_9/    # Context at inference   → T30
+├── run_0/    # Baseline: starter         → T0
+├── run_1/    # Baseline: epochs=5.       → T1
+├── run_2/    # Baseline: Ablation sweep  → T2–T22
+├── run_3/    # Improved baseline         → T24, T25, T26
+├── run_4/    # Frozen encoder, prompt.   → T22 (frozen), T23, context ablation
+├── run_5/    # Long training             → T27
+├── run_7/    # img_size=512              → T28
+├── run_8/    # Train+val retrain         → T29
+└── run_9/    # Context at inference      → T30
 ```
 
 ---
@@ -119,7 +120,7 @@ experiments/
 |---|---|---|---|---|
 | T29 | `run_8/` | Retrain from T28 best checkpoint with combined train+val | 0.8330 | 0.8511 |
 
-> Retrains from `run_7/0/best_checkpoint/`. No validation loop during retraining.
+> Retrains from `run_7/best_checkpoint/`. No validation loop during retraining.
 
 ---
 
@@ -129,7 +130,7 @@ experiments/
 |---|---|---|---|---|
 | T30 | `run_9/` | Subject-conditional context strategy at inference on T29 weights | N/A | 0.8511 |
 
-> Inference only — no retraining. Uses `run_8/0/final_checkpoint/`.
+> Inference only — no retraining. Uses `run_8/final_checkpoint/`.
 
 ---
 
@@ -137,12 +138,12 @@ experiments/
 
 | Checkpoint | Path | Used by |
 |---|---|---|
-| Baseline best | `run_0/0/best_checkpoint/` | T0 inference |
-| Improved baseline | `run_3/0/best_checkpoint/` | T24, T25, context ablation |
-| Full data best | `run_3/1/best_checkpoint/` | T26 submission |
-| Long training best | `run_5/0/best_checkpoint/` | T27, seeds T28 |
-| 512px best | `run_7/0/best_checkpoint/` | T28, base for T29 |
-| Combined train+val | `run_8/0/final_checkpoint/` | T29, T30 inference |
+| Baseline best | `run_0/best_checkpoint/` | T0 inference |
+| Improved baseline | `run_3/best_checkpoint/` | T24, T25, context ablation |
+| Full data best | `run_3_1/best_checkpoint/` | T26 submission |
+| Long training best | `run_5/best_checkpoint/` | T27, seeds T28 |
+| 512px best | `run_7/best_checkpoint/` | T28, base for T29 |
+| Combined train+val | `run_8/final_checkpoint/` | T29, T30 inference |
 
 ---
 
