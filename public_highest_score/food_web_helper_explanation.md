@@ -490,8 +490,3 @@ The helper avoids risky overrides in several ways:
 - It falls back to the model for unknown templates, unsupported wording, or ambiguous matches.
 
 This design protects overall accuracy: the symbolic helper improves rows it understands while preserving VLM predictions elsewhere.
-
-## Report-Ready Summary
-
-For food-web questions, we added a deterministic symbolic post-processing helper. We observed that the dataset reuses a small number of food-web diagrams, so each diagram can be identified by a SHA256 hash of the image file and mapped to a hand-coded graph. In these graphs, edges point from food source to consumer, allowing exact traversal of energy and matter flow. The helper parses common food-web question patterns, including producer, consumer, decomposer, omnivore, trophic-level, and reachability questions. It returns a symbolic answer only when exactly one answer choice satisfies the graph rule; otherwise it falls back to the VLM prediction. This hybrid design corrects systematic visual-reasoning failures while limiting the risk of applying symbolic logic outside its reliable scope.
-
