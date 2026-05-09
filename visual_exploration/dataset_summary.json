@@ -1,0 +1,205 @@
+{
+  "splits": {
+    "train": {
+      "n_rows": 3109,
+      "n_cols": 22,
+      "missing_hint_pct": 23.3,
+      "missing_lecture_pct": 14.2
+    },
+    "val": {
+      "n_rows": 1048,
+      "n_cols": 22,
+      "missing_hint_pct": 22.1,
+      "missing_lecture_pct": 12.7
+    },
+    "test": {
+      "n_rows": 1008,
+      "n_cols": 20,
+      "missing_hint_pct": 21.2,
+      "missing_lecture_pct": 18.2
+    }
+  },
+  "answer_distribution_train": {
+    "0": 0.3615,
+    "1": 0.3307,
+    "2": 0.2371,
+    "3": 0.0656,
+    "4": 0.0051
+  },
+  "num_choices_distribution_train": {
+    "2": 664,
+    "3": 1552,
+    "4": 783,
+    "5": 110
+  },
+  "subject_distribution_train": {
+    "natural science": 0.7282,
+    "social science": 0.247,
+    "language science": 0.0248
+  },
+  "unique_counts_train": {
+    "topic": 14,
+    "category": 55,
+    "skill": 109,
+    "lecture": 73,
+    "grade": 9
+  },
+  "question_length_train": {
+    "count": 3109.0,
+    "mean": 70.7,
+    "std": 34.1,
+    "min": 14.0,
+    "25%": 48.0,
+    "50%": 62.0,
+    "75%": 88.0,
+    "max": 289.0
+  },
+  "hint_length_train_nonempty": {
+    "count": 2385.0,
+    "mean": 311.8,
+    "std": 266.1,
+    "min": 36.0,
+    "25%": 123.0,
+    "50%": 191.0,
+    "75%": 455.0,
+    "max": 1845.0
+  },
+  "context_presence_train": {
+    "has_hint": 2385,
+    "has_lecture": 2669,
+    "has_both": 2128,
+    "has_neither": 183
+  },
+  "question_overlap": {
+    "train_val": 204,
+    "train_test": 199,
+    "val_test": 135
+  },
+  "top10_topics_train": {
+    "biology": 779,
+    "physics": 611,
+    "geography": 396,
+    "science-and-engineering-practices": 393,
+    "chemistry": 281,
+    "earth-science": 182,
+    "us-history": 173,
+    "economics": 163,
+    "writing-strategies": 59,
+    "world-history": 30
+  },
+  "top10_skills_train": {
+    "Compare magnitudes of magnetic forces": 251,
+    "Read a map: cardinal directions": 248,
+    "Use scientific names to classify organisms": 213,
+    "Compare concentrations of solutions": 192,
+    "Evaluate tests of engineering-design solutions": 171,
+    "Identify how particle motion affects temperature and pressure": 168,
+    "Trade and specialization": 163,
+    "Identify the experimental question": 162,
+    "Identify the Thirteen Colonies": 152,
+    "Describe ecosystems": 147
+  },
+  "image_metrics": {
+    "n_images_sampled": 900,
+    "width": {
+      "count": 900.0,
+      "mean": 428.1,
+      "std": 186.0,
+      "min": 68.0,
+      "25%": 302.0,
+      "50%": 378.0,
+      "75%": 563.0,
+      "max": 760.0
+    },
+    "height": {
+      "count": 900.0,
+      "mean": 275.3,
+      "std": 127.4,
+      "min": 80.0,
+      "25%": 174.0,
+      "50%": 237.0,
+      "75%": 358.0,
+      "max": 595.0
+    },
+    "aspect": {
+      "count": 900.0,
+      "mean": 1.8664,
+      "std": 1.3995,
+      "min": 0.3579,
+      "25%": 1.027,
+      "50%": 1.3165,
+      "75%": 1.7483,
+      "max": 7.4409
+    },
+    "size_kb": {
+      "count": 900.0,
+      "mean": 68.74,
+      "std": 72.66,
+      "min": 1.08,
+      "25%": 18.45,
+      "50%": 46.08,
+      "75%": 91.26,
+      "max": 473.58
+    },
+    "brightness": {
+      "count": 900.0,
+      "mean": 182.01,
+      "std": 56.04,
+      "min": 21.82,
+      "25%": 131.12,
+      "50%": 196.1,
+      "75%": 232.68,
+      "max": 250.74
+    },
+    "pct_grayscale": 0.0,
+    "mode_counts": {
+      "RGB": 900
+    },
+    "per_split": {
+      "test": {
+        "n": 300,
+        "width_median": 376.5,
+        "height_median": 237.0,
+        "size_kb_median": 45.26,
+        "brightness_mean": 181.34,
+        "pct_grayscale": 0.0
+      },
+      "train": {
+        "n": 300,
+        "width_median": 378.0,
+        "height_median": 237.0,
+        "size_kb_median": 58.58,
+        "brightness_mean": 178.01,
+        "pct_grayscale": 0.0
+      },
+      "val": {
+        "n": 300,
+        "width_median": 380.0,
+        "height_median": 237.0,
+        "size_kb_median": 43.66,
+        "brightness_mean": 186.68,
+        "pct_grayscale": 0.0
+      }
+    },
+    "per_subject": {
+      "language science": {
+        "n": 21,
+        "brightness_mean": 156.71,
+        "pct_grayscale": 0.0,
+        "size_kb_mean": 148.11
+      },
+      "natural science": {
+        "n": 702,
+        "brightness_mean": 179.44,
+        "pct_grayscale": 0.0,
+        "size_kb_mean": 66.66
+      },
+      "social science": {
+        "n": 177,
+        "brightness_mean": 195.21,
+        "pct_grayscale": 0.0,
+        "size_kb_mean": 67.55
+      }
+    }
+  }
+}
