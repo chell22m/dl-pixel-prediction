@@ -129,7 +129,7 @@ The food-web helper was part of the final hybrid inference strategy used in the 
 
 The result supports a broader conclusion from the project: compact vision-language models can perform well on many multimodal science questions, but narrow symbolic modules can provide substantial gains on diagram types with clear formal structure. In these cases, hybrid inference is a practical way to combine the flexibility of a learned model with the reliability of deterministic reasoning.
 
-## Report Summary Paragraph
+## Report Summary
 
 For food-web questions, we added a deterministic symbolic post-processing helper. The helper first identifies repeated food-web diagrams by hashing the image file and mapping it to one of six known templates from the provided dataset. Each template is represented as a directed graph whose edges point from food source to consumer. The helper then parses common food-web question patterns, including producer, consumer, decomposer, omnivore, trophic-level, and reachability questions, and applies exact graph rules to the answer choices. It overrides the VLM only when exactly one answer choice satisfies the symbolic rule; otherwise, it preserves the original model prediction. This conservative hybrid design corrected systematic graph-reasoning failures while limiting the risk of applying symbolic logic outside its reliable scope.
 
